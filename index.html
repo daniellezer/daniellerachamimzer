@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>דניאל רחמים זר</title>
-  <link rel="stylesheet" href="style.css">
+
+  <!-- פונט עברי רך ונקי -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
+
 <body>
 
-<header class="header">
-  <div class="container nav">
-    <div class="logo">דניאל רחמים זר</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="#home">דניאל רחמים זר</a>
 
-    <nav>
+    <nav class="main-nav" aria-label="ניווט ראשי">
       <a href="#about">אודות</a>
       <a href="#research">תחומי עניין</a>
       <a href="#projects">תזה</a>
@@ -21,136 +29,160 @@
   </div>
 </header>
 
-<section class="hero">
+<main id="home">
 
-  <div class="container hero-grid">
+  <section class="hero">
+    <div class="container hero-inner">
 
-    <div class="hero-content">
+      <div class="hero-text">
+        <p class="kicker">עובדת סוציאלית ומדריכת הורים</p>
 
-      <p class="eyebrow">
-        עובדת סוציאלית ומדריכת הורים
-      </p>
+        <h1>דניאל רחמים זר</h1>
 
-      <h1>דניאל רחמים זר</h1>
+        <p class="lead">
+          עובדת סוציאלית ומדריכת הורים, עוסקת בבריאות הנפש ובטיפול בקהילה הגאה,
+          תמיכה במשפחות ויצירת מרחבים בטוחים ברשת ומחוץ לה.
+        </p>
 
-      <p class="subtitle">
-        עובדת סוציאלית ומדריכת הורים, עוסקת בבריאות הנפש ובטיפול בקהילה הגאה,
-        תמיכה במשפחות ויצירת מרחבים בטוחים ברשת ומחוץ לה.
-      </p>
-
-      <div class="buttons">
-        <a href="#contact" class="btn primary">יצירת קשר</a>
-        <a href="#about" class="btn secondary">עוד עליי</a>
+        <div class="hero-actions">
+          <a class="button primary" href="#contact">יצירת קשר</a>
+          <a class="button secondary" href="#about">עוד עליי</a>
+        </div>
       </div>
+
+      <aside class="profile-card" aria-label="תמונה ופרטים קצרים">
+        <img
+          src="profile.jpg"
+          alt="דניאל רחמים זר"
+          class="profile-photo"
+          width="210"
+          height="210"
+          style="width:210px;height:210px;object-fit:cover;border-radius:50%;"
+        />
+
+        <div class="mini-details">
+          <span>עו״ס להט״ב · עיריית פתח תקווה</span>
+          <span>תואר שני בעבודה סוציאלית · אוניברסיטת אריאל</span>
+          <span>תעודת הדרכת הורים · סמינר הקיבוצים</span>
+        </div>
+      </aside>
 
     </div>
+  </section>
 
-    <div class="hero-image">
-      <img src="profile.jpg" alt="דניאל רחמים זר">
-    </div>
+  <section id="about" class="section about-section">
+    <div class="container split">
 
-  </div>
-
-</section>
-
-<section id="about" class="section">
-  <div class="container narrow">
-
-    <h2>אודות</h2>
-
-    <p>
-      שמי דניאל, אני עובדת סוציאלית, מדריכת הורים וסטודנטית לתואר שני בעבודה סוציאלית.
-      את לימודי התואר הראשון השלמתי באוניברסיטת תל אביב, ואת לימודי התואר השני
-      אני משלימה כיום באוניברסיטת אריאל.
-    </p>
-
-    <p>
-      אני בעלת תעודה בהדרכת הורים מטעם סמינר הקיבוצים, ועובדת כעו״ס להט״ב
-      בעיריית פתח תקווה. עבודתי משלבת בין ליווי רגשי, חשיבה מערכתית,
-      בריאות הנפש, עבודה עם משפחות ויצירת מרחבים בטוחים ותומכים.
-    </p>
-
-    <p>
-      כיום אני נמצאת בשלבי כתיבת תזה העוסקת בתהליך ההסתגלות של בני משפחה
-      להתאמה מגדרית של אחד מקרוביהם.
-    </p>
-
-  </div>
-</section>
-
-<section id="research" class="section soft">
-  <div class="container">
-
-    <h2>תחומי עניין</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>יחסים משפחתיים</h3>
-        <p>
-          תהליכי שינוי, הסתגלות, קבלה ושייכות בתוך מערכות משפחתיות.
-        </p>
+      <div class="image-note">
+        <img
+          src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80"
+          alt="מחברת פתוחה בסביבה רגועה"
+        />
       </div>
 
-      <div class="card">
-        <h3>בריאות הנפש</h3>
-        <p>
-          ליווי רגשי, תמיכה קהילתית, שיקום וחשיבה מערכתית.
-        </p>
-      </div>
+      <div class="content-card">
+        <h2>אודות</h2>
 
-      <div class="card">
-        <h3>קהילה גאה ושיקום</h3>
         <p>
-          זהות, משפחה, תמיכה בקהילה הגאה ויצירת מרחבים בטוחים.
+          שמי דניאל, אני עובדת סוציאלית, מדריכת הורים וסטודנטית לתואר שני בעבודה סוציאלית.
+          את לימודי התואר הראשון השלמתי באוניברסיטת תל אביב, ואת לימודי התואר השני
+          אני משלימה כיום באוניברסיטת אריאל.
+        </p>
+
+        <p>
+          אני בעלת תעודה בהדרכת הורים מטעם סמינר הקיבוצים, ועובדת כעו״ס להט״ב
+          בעיריית פתח תקווה. עבודתי משלבת בין ליווי רגשי, חשיבה מערכתית,
+          בריאות הנפש, עבודה עם משפחות ויצירת מרחבים בטוחים ותומכים.
+        </p>
+
+        <p>
+          כיום אני נמצאת בשלבי כתיבת תזה העוסקת בתהליך ההסתגלות של בני משפחה
+          להתאמה מגדרית של אחד מקרוביהם.
         </p>
       </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="research" class="section research-section">
+    <div class="container">
+      <div class="section-heading">
+        <p class="small-title">תחומי עניין מחקריים ומקצועיים</p>
+        <h2>תחומי עניין</h2>
+      </div>
 
-<section id="projects" class="section">
-  <div class="container narrow">
+      <div class="cards">
+        <article class="card cream-card">
+          <h3>יחסים משפחתיים</h3>
+          <p>תהליכי שינוי, הסתגלות, קבלה ושייכות בתוך מערכות משפחתיות.</p>
+        </article>
 
-    <h2>תזה</h2>
+        <article class="card green-card">
+          <h3>בריאות הנפש</h3>
+          <p>ליווי רגשי, תמיכה קהילתית, שיקום וחשיבה מערכתית.</p>
+        </article>
 
-    <div class="project-box">
+        <article class="card blue-card">
+          <h3>קהילה גאה</h3>
+          <p>זהות, משפחה, תמיכה בקהילה הגאה ויצירת מרחבים בטוחים.</p>
+        </article>
 
-      <h3>
-        משפחות, זהות ותהליכי הסתגלות בקהילה הלהט״בית
-      </h3>
+        <article class="card yellow-card">
+          <h3>שיקום</h3>
+          <p>התמודדות, רצף מענים, מיצוי זכויות וחיזוק תפקוד בקהילה.</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <p>
-        מחקר העוסק בחוויות, קשרים ותהליכים משפחתיים סביב זהות,
-        שייכות ותהליך ההתאמה המגדרית של אחד מבני המשפחה.
-      </p>
+  <section id="projects" class="section project-section">
+    <div class="container project-grid">
+
+      <div class="project-text">
+        <p class="small-title">פרויקט נוכחי</p>
+        <h2>תזה</h2>
+
+        <div class="project-box">
+          <h3>משפחות, זהות ותהליכי הסתגלות בקהילה הלהט״בית</h3>
+
+          <p>
+            מחקר העוסק בחוויות, קשרים ותהליכים משפחתיים סביב זהות,
+            שייכות ותהליך ההתאמה המגדרית של אחד מבני המשפחה.
+          </p>
+        </div>
+      </div>
+
+      <div class="soft-image">
+        <img
+          src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=900&q=80"
+          alt="פרחים רכים בגוונים בהירים"
+        />
+      </div>
 
     </div>
+  </section>
 
-  </div>
-</section>
+  <section id="contact" class="section contact-section">
+    <div class="container narrow center">
+      <p class="small-title">אשמח לשמוע ממך</p>
+      <h2>יצירת קשר</h2>
 
-<section id="contact" class="section contact">
-  <div class="container narrow">
+      <p>ניתן ליצור קשר במייל:</p>
 
-    <h2>יצירת קשר</h2>
+      <a class="mail-link" href="mailto:daniellezer0417@gmail.com">
+        daniellezer0417@gmail.com
+      </a>
+    </div>
+  </section>
 
-    <p>
-      ניתן ליצור קשר במייל:
-    </p>
-
-    <a class="mail" href="mailto:daniellezer0417@gmail.com">
-      daniellezer0417@gmail.com
-    </a>
-
-  </div>
-</section>
+</main>
 
 <footer class="footer">
   <div class="container">
-    © 2026 דניאל רחמים זר
+    <p>© 2026 דניאל רחמים זר</p>
+    <p class="credits">
+      תמונות אווירה: Unsplash. אפשר להחליף או להסיר בכל רגע.
+    </p>
   </div>
 </footer>
 
