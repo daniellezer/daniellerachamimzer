@@ -1,31 +1,24 @@
-# Daniel Academic Website V3
+# האתר של דניאל רחמים זר
 
-גרסה רכה, נגישה ואישית יותר של האתר,
+גרסה מעודכנת ורכה יותר של האתר האישי,
 בהשראת אתרים אקדמיים מודרניים.
 
 ## קבצים
 
 - index.html
 - style.css
+- profile.jpg
 - README.md
 
-## הוספת תמונה
+## העלאה ל-GitHub Pages
 
-שימי תמונה בשם:
+להעלות את כל הקבצים לריפו,
+ואז:
 
-profile.jpg
+Settings → Pages
 
-באותה תיקייה של index.html
+Deploy from branch → main → /root
 
-## GitHub Pages
+## עריכה
 
-1. העלי את כל הקבצים ל־repository
-2. לכי ל:
-   Settings → Pages
-3. בחרי:
-   Deploy from branch → main → /root
-4. שמרי
-
-## עריכת טקסטים
-
-כל הטקסטים נמצאים ב־index.html
+כל הטקסטים נמצאים ב-index.html
